@@ -1,1 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Define variáveis globais para cores e bordas, facilitando a manutenção e ajustes futuros. */
+:root {
+    --main-color: #da190f;
+    --bg: #13131a;
+    --bg-card: #0c0c14;
+    --border: 0.1rem solid grey;
+}
+
+/* Remove margens, paddings e bordas padrões.
+Define o comportamento de transição padrão para animações e utiliza a fonte Roboto.
+A propriedade text-transform: capitalize garante que todas as palavras comecem com letra maiúscula. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /*LETRAS MAISCULA*/
+    transition: 0.2s linear;
+    font-family: 'Roboto', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+html {
+font-size: 62.5%; /*configuração do font-size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
+overflow-x: hidden;
+
+
+}
+
+body {
+background: var(--bg);
+
+
+}
+
+header {
+background: var(--bg);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1.5rem 7% /*explicação do uso da porcentagem*/;
+border-bottom: var(--border);
+position: sticky;
+top: 0;
+left: 0;
+z-index: 999;
+
+
+
+}
+
+.logo img {
+height: 6.5rem;
+border-radius: 100%; /*tornar a logo circular*/
+
+}
+
+.ul-header {
+display: flex;
+gap: 15px;
+
+}
+
+.ul-header li a {
+color: #fff;
+font-size: 1.6rem;
+}
+
+.ul-header li a:hover {
+color: var(--main-color);
+border-bottom: 0.1rem solid var(--main-color ); /*adiciona uma linha inferior no hover*/
+padding-bottom: 0.5rem; /*adiciona espaçamento infeiror no hover*/
+
+
+}
+
+
+
+.icons { /*NÃO ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
+display: flex;
+align-items: center;
+gap: 15px
+
+}
+
+.icons i {
+color: white; /*cor branca para icones*/
+cursor: pointer; /*alterar o cursor ao passar sobre o icone*/
+font-size: 2.5rem; /*tamanho do icone*/
+
+}
+
+.icons i:hover {
+color: var(--main-color);
+
+}
+
+#home {
+display: flex;
+align-items: center;
+position: relative;
+min-height: 85vh;
+background: url(images/home.jpg) no-repeat;
+background-position: center;
+border-bottom: var(--border);
+
+
+}
+
+.content {
+max-width: 60rem; /*Tamanho da fonte*/
+position: relative;
+z-index: 2;
+
+}
+
+.content h3 {
+font-size: 6rem;
+text-transform: uppercase;
+color: #fff;
+
+}
+
+.content p {
+font-size: 2rem;
+font-weight: lighter;
+line-height: 1.8;
+padding: 1rem 0;
+color: #fff;
+}
