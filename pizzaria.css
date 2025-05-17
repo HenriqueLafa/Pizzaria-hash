@@ -107,6 +107,7 @@ position: relative;
 min-height: 85vh;
 background: url(images/home.jpg) no-repeat;
 background-position: center;
+background-size: cover;
 border-bottom: var(--border);
 
 
@@ -133,3 +134,20 @@ line-height: 1.8;
 padding: 1rem 0;
 color: #fff;
 }
+
+ /* #https://www.w3schools.com/sel_before.php */
+
+ #home::before {
+content: ""; /*adiciona elemento vazio*/
+position: absolute; /*Permite posicionamento absoluto*/
+top: 0; /**/
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0, 0.5);
+z-index : 1;
+
+
+
+
+ }
