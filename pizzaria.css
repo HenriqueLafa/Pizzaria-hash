@@ -26,128 +26,233 @@ A propriedade text-transform: capitalize garante que todas as palavras comecem c
 }
 
 html {
-font-size: 62.5%; /*configuração do font-size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
-overflow-x: hidden;
+    font-size: 62.5%;
+    /*configuração do font-size para 62.5%, facilitando o uso do REM (1rem = 10px)*/
+    overflow-x: hidden;
 
 
 }
 
 body {
-background: var(--bg);
+    background: var(--bg);
 
 
 }
 
 header {
-background: var(--bg);
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 1.5rem 7% /*explicação do uso da porcentagem*/;
-border-bottom: var(--border);
-position: sticky;
-top: 0;
-left: 0;
-z-index: 999;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%
+        /*explicação do uso da porcentagem*/
+    ;
+    border-bottom: var(--border);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
 
 
 
 }
 
 .logo img {
-height: 6.5rem;
-border-radius: 100%; /*tornar a logo circular*/
+    height: 6.5rem;
+    border-radius: 100%;
+    /*tornar a logo circular*/
 
 }
 
 .ul-header {
-display: flex;
-gap: 15px;
+    display: flex;
+    gap: 15px;
 
 }
 
 .ul-header li a {
-color: #fff;
-font-size: 1.6rem;
+    color: #fff;
+    font-size: 1.6rem;
 }
 
 .ul-header li a:hover {
-color: var(--main-color);
-border-bottom: 0.1rem solid var(--main-color ); /*adiciona uma linha inferior no hover*/
-padding-bottom: 0.5rem; /*adiciona espaçamento infeiror no hover*/
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    /*adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;
+    /*adiciona espaçamento infeiror no hover*/
 
 
 }
 
 
 
-.icons { /*NÃO ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
-display: flex;
-align-items: center;
-gap: 15px
-
+.icons {
+    /*NÃO ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
+    display: flex;
+    align-items: center;
+    gap: 15px
 }
 
 .icons i {
-color: white; /*cor branca para icones*/
-cursor: pointer; /*alterar o cursor ao passar sobre o icone*/
-font-size: 2.5rem; /*tamanho do icone*/
+    color: white;
+    /*cor branca para icones*/
+    cursor: pointer;
+    /*alterar o cursor ao passar sobre o icone*/
+    font-size: 2.5rem;
+    /*tamanho do icone*/
 
 }
 
 .icons i:hover {
-color: var(--main-color);
+    color: var(--main-color);
 
 }
 
 #home {
-display: flex;
-align-items: center;
-position: relative;
-min-height: 85vh;
-background: url(images/home.jpg) no-repeat;
-background-position: center;
-background-size: cover;
-border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 85vh;
+    background: url(images/home.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: var(--border);
 
 
 }
 
 .content {
-max-width: 60rem; /*Tamanho da fonte*/
-position: relative;
-z-index: 2;
+    max-width: 60rem;
+    /*Tamanho da fonte*/
+    position: relative;
+    z-index: 2;
 
 }
 
 .content h3 {
-font-size: 6rem;
-text-transform: uppercase;
-color: #fff;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
 
 }
 
 .content p {
-font-size: 2rem;
-font-weight: lighter;
-line-height: 1.8;
-padding: 1rem 0;
-color: #fff;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
 }
 
- /* #https://www.w3schools.com/sel_before.php */
+/* #https://www.w3schools.com/sel_before.php */
 
- #home::before {
-content: ""; /*adiciona elemento vazio*/
-position: absolute; /*Permite posicionamento absoluto*/
-top: 0; /*alinha no topo*/
-left: 0; /*alinha á esquerda*/
-width: 100%; /*ocupa toda largura*/
-height: 100%; /*ocupa toda altura*/
-background: rgba(0,0,0, 0.5); /*adiciona sobreposição escura*/
-z-index : 1; /*posiciona abaixo o conteudo*/
+#home::before {
+    content: "";
+    /*adiciona elemento vazio*/
+    position: absolute;
+    /*Permite posicionamento absoluto*/
+    top: 0;
+    /*alinha no topo*/
+    left: 0;
+    /*alinha á esquerda*/
+    width: 100%;
+    /*ocupa toda largura*/
+    height: 100%;
+    /*ocupa toda altura*/
+    background: rgba(0, 0, 0, 0.5);
+    /*adiciona sobreposição escura*/
+    z-index: 1;
+    /*posiciona abaixo o conteudo*/
 
 
 
 
- }
+}
+
+section {
+    padding: 2rem 7%;
+    /*garante espaçamento interno das sessoes (responsividade)*/
+
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    /*texto em caixa alta*/
+    padding-bottom: 3rem;
+    /*espaçamento inferior em relação ao titulo*/
+    ;
+    font-size: 4rem;
+    /*40px*/
+    ;
+
+
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+
+
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+    display: inline-block;
+
+
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
+    /*Espaçamento entre as letras ao passar o mouse*/
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: var(--bg-card);
+    flex-wrap: wrap;
+    border: var(--border);
+
+}
+
+.row .image {
+
+    flex: 1 1 45rem;
+    /*Define o tamanho glexiviel do elemento: base 45rem, podendo crescer ou encolher, ou seja, faz com que possa ser adaptavel para telas grandes ou pequenas*/
+
+}
+
+.row .image img {
+
+    width: 100%; /*Faz com que a imagem ocupe toda a largura do container (.image)*/
+}
+
+.row .content {
+flex: 1 1 45rem; /*Define o tamanho flexivel do conteudo: base 45rem podera crescer ou diminuir*/
+padding: 2rem; /*Adiciona o espaçamento interno ao redor do conteudo */
+}
+
+.row .content h3 {
+font-size: 3rem; /*define o tamanho da fonte para o subtitulo*/
+color: #fff; /*cor da letra*/
+
+
+}
+
+.row .content p {
+font-size: 1.6rem; /*Define o tamanho da fonte para o paragrafo*/
+color: #ccc;
+padding: 1rem 0; /*adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
+line-height: 1.8rem; /*Define o espaçamento entre linhas do texto*/
+
+
+}
