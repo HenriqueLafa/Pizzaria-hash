@@ -256,3 +256,61 @@ line-height: 1.8rem; /*Define o espaçamento entre linhas do texto*/
 
 
 }
+
+.container {
+display: grid; 
+grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+gap: 1.5rem;
+
+
+
+}
+.container .box {
+padding: 5rem;
+text-align: center;
+border: var(--border); /*aplicando uma bosta ao redor da caixa*/
+background: var(--bg-card); /*Define a cor de fundo da caixa*/
+
+
+}
+
+.container .box img {
+height: 18rem;
+border-radius: 100%;
+
+
+}
+
+.container .box h2 {
+color: #fff; /*apica a cor branca ao titulo*/
+font-size: 2rem; /*Define o tamanho da fonte do titulo*/
+padding: 1rem 0; /*adiciona espaçamento  vertical ao titulo*/
+ 
+}
+
+.container .box .price {
+
+    color: #fff;  
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+    
+
+}
+
+.container .box .price span {
+font-size: 1.5rem;
+text-decoration: line-through;
+font-weight: lighter; /*Aplica u*/
+}
+
+.container .box:hover {
+background: #fff;
+
+
+}
+
+.container .box:hover>* {
+color: black; /*altera cor dos elementos*/
+
+
+}
