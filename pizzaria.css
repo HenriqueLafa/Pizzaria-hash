@@ -309,8 +309,94 @@ background: #fff;
 
 }
 
-.container .box:hover>* {
+.container .box:hover> {
 color: black; /*altera cor dos elementos*/
+
+
+}
+
+
+.products .box-container {
+    display: grid;  /*organiza os elementos em uma grid*/
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));  /*cria colunas flexiveis com largura mínima de 30rem e maxima prporcional*/
+gap: 1.5rem; /*define o espaçamento entre os itens da grade*/
+
+
+}
+
+
+.box-container .box {
+text-align: center; 
+border: var(--border);
+padding: 2rem;
+
+
+
+}
+
+
+/*estilizando os icons*/
+.icons a i {
+height: 3rem; /*define a altura dos icones*/
+width: 3rem; /*largura dos icones*/
+line-height: 3rem; /*distancia dos conteudos/ altura da linha*/
+font-size: 1.7rem;  /*define o tamanho da fonte para os icones*/
+border: var(--border); /*aplica uma borda ao redor dos icones*/
+color: #fff; /*define a cor branca para os icones*/
+margin: 0.3rem; /*Adiciona espaçamento entre os icones*/
+}
+
+.icons a i:hover {
+background: var(--main-color);
+
+
+}
+
+.box .image {
+padding: 2.5rem 0; /*adiciona espaçamento vertical*/
+
+
+}
+
+.box .image img {
+height: 25rem; /*altura das imagens*/
+
+
+}
+
+
+.box .content {
+color: #fff;
+font-size: 2.5rem;
+
+
+}
+
+.box .content .stars {
+padding: 1.5rem;
+
+
+}
+
+.box .content .stars i {
+font-size: 1.9rem; /*tamanho das estrelas*/
+color: var(--main-color); /*aplica cor nas estrelas*/
+
+
+}
+
+
+.box .content .price {
+color: #fff;
+font-size: 2.5rem;
+
+
+}
+
+.box .content .price span {
+font-weight: lighter;
+font-size: 1.5rem;
+text-transform: lowercase;
 
 
 }
