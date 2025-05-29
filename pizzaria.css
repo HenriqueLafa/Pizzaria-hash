@@ -241,14 +241,14 @@ flex: 1 1 45rem; /*Define o tamanho flexivel do conteudo: base 45rem podera cres
 padding: 2rem; /*Adiciona o espaçamento interno ao redor do conteudo */
 }
 
-.row .content h3 {
-font-size: 3rem; /*define o tamanho da fonte para o subtitulo*/
+ .content h3 {
+font-size: 2.1rem; /*define o tamanho da fonte para o subtitulo*/
 color: #fff; /*cor da letra*/
 
 
 }
 
-.row .content p {
+ .content p {
 font-size: 1.6rem; /*Define o tamanho da fonte para o paragrafo*/
 color: #ccc;
 padding: 1rem 0; /*adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
@@ -288,7 +288,7 @@ padding: 1rem 0; /*adiciona espaçamento  vertical ao titulo*/
  
 }
 
-.container .box .price {
+ .box .price {
 
     color: #fff;  
     font-size: 2.5rem;
@@ -297,19 +297,19 @@ padding: 1rem 0; /*adiciona espaçamento  vertical ao titulo*/
 
 }
 
-.container .box .price span {
+ .price span {
 font-size: 1.5rem;
 text-decoration: line-through;
 font-weight: lighter; /*Aplica u*/
 }
 
-.container .box:hover {
+ .box:hover {
 background: #fff;
 
 
 }
 
-.container .box:hover> {
+ .box:hover> {
 color: black; /*altera cor dos elementos*/
 
 
@@ -378,7 +378,7 @@ padding: 1.5rem;
 
 }
 
-.box .content .stars i {
+ .stars i {
 font-size: 1.9rem; /*tamanho das estrelas*/
 color: var(--main-color); /*aplica cor nas estrelas*/
 
@@ -386,7 +386,7 @@ color: var(--main-color); /*aplica cor nas estrelas*/
 }
 
 
-.box .content .price {
+ .price {
 color: #fff;
 font-size: 2.5rem;
 
@@ -398,5 +398,105 @@ font-weight: lighter;
 font-size: 1.5rem;
 text-transform: lowercase;
 
+
+}
+
+.box-container {
+display: flex;
+align-items: center;
+gap: 15px;
+
+
+
+}
+
+.box-container p {
+
+color: white;
+font-size: 20px;
+padding: 10px;
+
+
+}
+
+.box-container h2 {
+color: #fff;
+padding: 10px;
+
+
+}
+
+.box-container i {
+color: #da190f;
+
+}
+
+.box-container .img01 {
+width: 10em;
+border-radius: 100%;
+
+
+}
+
+
+
+.review .box-container {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+gap: 1.5rem;
+}
+
+.review .box-container .box {
+border: var(--border);
+text-align: center; /*centraliza os textos*/
+padding: 3rem 2rem;
+
+}
+
+.review .box-container .box p {
+font-size: 1.7rem;
+line-height: 1.8;
+color: #ccc;
+padding: 2rem 0;
+
+
+}
+
+.review .box-container .box p {
+font-size: 1.7rem;
+line-height: 1.8;
+color: #ccc;
+padding: 2rem 0;
+
+
+}
+
+.review .box-container .box h3 {
+padding: 1rem 0;
+color: #fff;
+font-size: 2.2rem;
+}
+
+
+.user {
+height: 10rem; /*define altur*/
+width: 10rem;
+border-radius: 50%;
+object-fit: cover;
+
+
+}
+
+.user {
+height: 10rem;
+width: 10rem;
+border-radius: 50%;
+object-fit: cover;
+
+}
+
+.review .box-container .box .stars i {
+font-size: 1,7rem;
+color: var(--main-color);
 
 }
