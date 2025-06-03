@@ -1,0 +1,54 @@
+/* position RELATIVE *
+/* O elemento continua no fluxo normal, mas pode ser movido em relação a sua posição original */
+/* utiliza top, left right e bottom para ajustar a posição */
+
+div {
+position: relative;
+top: 10px; /*desce 10px*/
+left: 10px; /*vai 20px para a direita*/
+
+
+}
+/*position ABSOLUTE*/
+/* O elemento sai do fluxo normal e é posicionado em relação ao elemento pai com position:relative (ou absolute)
+/*se nenhum pai estiver posicionado sera em relação á <boddy> */
+
+.container {
+position: relative;
+}
+
+.filho {
+    position: absolute;
+
+}
+
+/*muito usado para sobrepor elementos (como balões de notificação ou botoes internos) */
+
+/* position FIXED */
+
+/* O elemento é fixado em relação à janela do navegador (viewport)
+mesmo ao rolar a página, ele fica parado no lugar */
+
+.botao-whats  {
+    position: fixed;
+    left: 83em;
+    margin-top: 40em;
+ background-color: rgb(108, 199, 108);
+padding: 10px;
+color: white;
+  border-radius: 50%;
+display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.botao-whats i {
+color: green;
+font-size: 3em;
+
+
+}
+
+/*com tudo se usa position fixed porem com header é o sticky*/ 

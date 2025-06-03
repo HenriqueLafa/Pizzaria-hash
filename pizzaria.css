@@ -215,6 +215,32 @@ section {
 
 }
 
+.botao-whats  {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(98, 207, 98);
+    color: white;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 1000;
+
+
+}
+   
+.botao-whats i {
+
+    font-size: 3em;
+   color: green;
+    
+    }
+
+
 .btn:hover {
     letter-spacing: 0.2rem;
     /*Espaçamento entre as letras ao passar o mouse*/
