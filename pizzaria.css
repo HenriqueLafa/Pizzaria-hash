@@ -122,6 +122,11 @@ header {
 
 }
 
+.box:hover>* {
+color: black;
+
+}
+
 .content {
     max-width: 60rem;
     /*Tamanho da fonte*/
@@ -319,9 +324,8 @@ section {
 }
 
 .box:hover {
-    background-color: #fff;
-    color: black;
-    transition: 1s;
+    background: #fff;
+ 
 
 }
 
